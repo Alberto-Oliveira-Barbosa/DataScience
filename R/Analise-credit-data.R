@@ -5,11 +5,11 @@ View(dados)
 # ANÁLISE PRELIMINAR
 
 #Os dados são divididos em 2000 registros e 5 colunas: 
-#   ClientId - id do cliente
+#   ClientId - Identificador do cliente
 #   Income - Renda do cliente
 #   Age - Idade do cliente
-#   Loan - Divida do cliente
-#   Default - Se o impréstimo foi quitado (0 - não, 1 - Sim)
+#   Loan - Dívida do cliente
+#   Default - Se o empréstimo foi quitado (0 - não, 1 - Sim)
 
 # a coluna  clienteid não é necessária para a analise
 dados$clientid = NULL
