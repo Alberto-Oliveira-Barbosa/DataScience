@@ -11,9 +11,11 @@ estatístico e eliminando colunas para melhor visualização dos dados
 ################################################################################
 
 def carregar_dados(df=''):
+
     nome_arq = input('Digite o nome do arquivo csv para carregar as informações  básicas sobre ele\n')
     dados = pd.read_csv(nome_arq)
     return dados, nome_arq
+
 
 def menu(nome):
     print('\n\n--------------------------------------')
@@ -60,43 +62,43 @@ def deletar_coluna(df,nome):
 def gerar_relatorio(df,nome):
 
     relatorio = """
-    RESUMO DO DATAFRAME {}
+    \rRESUMO DO DATAFRAME:  {}
 
-    ESTRUTURA:
+    \n\nESTRUTURA:
 
-    Nome do arquivo: {}
-    Quantidade de observações: {}
-    Quantidade de colunas: {}
-    Nome das colunas:
-    {}
+    \rNome do arquivo: {}
+    \rQuantidade de observações: {}
+    \rQuantidade de colunas: {}
+    \rNome das colunas:
+    \r{}
 
 
     RESUMO DOS DADOS
 
-    Soma dos valores das colunas:
-    {}
+    \rSoma dos valores das colunas:
+    \r{}
 
-    Menor valor:
-    {}
+    \rMenor valor:
+    \r{}
 
-    Maior valor:
-    {}
+    \rMaior valor:
+    \r{}
 
-    Média:
-    {}
+    \rMédia:
+    \r{}
 
-    Mediana:
-    {}
+    \rMediana:
+    \r{}
 
 
     SUMÀRIO ESTATÍSTICO
 
-    {}
+    \r{}
 
 
     PRIMEIRAS OBSERVAÇÕES:
 
-    {}""".format(str.upper(nome.split('.')[0]),nome,df.shape[0],df.shape[1],[i for i in df.columns],df.sum(),df.min(),df.max(), df.mean(), df.median(),df.describe(),df.head())
+    \r{}""".format(str.upper(nome.split('.')[0]),nome,df.shape[0],df.shape[1],[i for i in df.columns],df.sum(),df.min(),df.max(), df.mean(), df.median(),df.describe(),df.head())
 
     op = input('Deseja visualizar na tela? S/N\n')
     if(op.upper()[0] == 'S'):
@@ -115,25 +117,28 @@ def gerar_relatorio(df,nome):
 
 
 # primeira carga dos dados
-dados, nome_arq = carregar_dados()
+try:
+    dados, nome_arq = carregar_dados()
 
-# Lista com todas as funções do programa
-funcoes = [menu, dados_principais, analise, deletar_coluna, carregar_dados, gerar_relatorio]
+    # Lista com todas as funções do programa
+    funcoes = [menu, dados_principais, analise, deletar_coluna, carregar_dados, gerar_relatorio]
 
-opcao = 0
+    opcao = 0
 
-# Loop principal
-while (opcao <6):
+    # Loop principal
+    while (opcao <6):
 
-    # carrega o menu
-    opcao = funcoes[0](nome_arq)
+        # carrega o menu
+        opcao = funcoes[0](nome_arq)
 
-    # carrega um novo dataframe
-    if opcao == 4:
-        dados, nome_arq = carregar_dados();continue
+        # carrega um novo dataframe
+        if opcao == 4:
+            dados, nome_arq = carregar_dados();continue
 
-    # Encerra o loop
-    if opcao == 6: break
+        # Encerra o loop
+        if opcao == 6: break
 
-    # carrega as demais funções
-    funcoes[opcao](dados,nome_arq)
+        # carrega as demais funções
+        funcoes[opcao](dados,nome_arq)
+except Exception as e:
+    print('Ocorreu um erro:\n',e)
