@@ -8,3 +8,4 @@ Descrições dos diretórios:
 - *machineLearning* -> Exercícios e testes de algoritmos de machine learning
 - *python* -> Exercícios com bibliotecas do python
 - *scripts_automatizados* -> Script que faz uma análise básica de um dataset
+- *KDD 2009* -> Competição KDD Cup 2009
