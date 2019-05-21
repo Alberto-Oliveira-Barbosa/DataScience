@@ -9,3 +9,4 @@ Descrições dos diretórios:
 - *python* -> Exercícios com bibliotecas do python
 - *scripts_automatizados* -> Script que faz uma análise básica de um dataset
 - *KDD 2009* -> Competição KDD Cup 2009
+- *Previsao_notas* -> Competição para Previsão das notas de matemática dos alunos do Enem de 2016
