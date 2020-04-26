@@ -2,11 +2,11 @@
 ### Repositório com alguns projetos e estudos sobre Ciência de dados e Machine Learning  
 
 
-## Descrições dos diretórios:
+## Projetos:
 
 - [**COVID-19**-> Estudo sobre a evolução do Coronavírus pelo mundo](https://github.com/Alberto-Oliveira-Barbosa/covid-19/blob/master/new-notebook-Covid-19.ipynb)
-- [**KDD 2009** -> Competição KDD Cup 2009](https://github.com/Alberto-Oliveira-Barbosa/DataScience/blob/master/KDD%202009/kdd.ipynb)
-- [**Previsao_notas** -> Competição para Previsão das notas de matemática dos alunos do Enem de 2016](https://github.com/Alberto-Oliveira-Barbosa/DataScience/blob/master/previsao%20notas/previsao_notas.ipynb)
+- [**KDD 2009** -> Previsão de Churn, appetency e up-selling para a competição KDD Cup 2009](https://github.com/Alberto-Oliveira-Barbosa/DataScience/blob/master/KDD%202009/kdd.ipynb)
+- [**Previsão de Notas** -> Aplicação de redes neurais para a previsão das notas de matemática dos alunos que prestaram o Enem de 2016](https://github.com/Alberto-Oliveira-Barbosa/DataScience/blob/master/previsao%20notas/previsao_notas.ipynb)
 - [**Kaggle/titanic** -> Solução da competição para previsão de sobreviventes ao naufrágio do Titanic](https://github.com/Alberto-Oliveira-Barbosa/DataScience/tree/master/kaggle/Titanic)
 - [**Previsão da Ocorrência de Diabetes** -> Estudo e aplicação de algoritimos de aprendizado de máquina para a previsão do surgimento de casos de diabetes](https://github.com/Alberto-Oliveira-Barbosa/DataScience/blob/master/machineLearning/ocorrencia_de_diabetes/ocorrencia_diabetes.ipynb)
 - [**MachineLearning** -> Exercícios e testes de algoritmos de machine learning](https://github.com/Alberto-Oliveira-Barbosa/DataScience/tree/master/machineLearning)
