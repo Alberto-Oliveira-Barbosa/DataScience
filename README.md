@@ -3,7 +3,7 @@
 
 
 ## Projetos:
-
+- [**AceleraDev Data Science** -> Projetos feitos durante a Aceleração em Data Science oferecida pela Codenation](https://github.com/Alberto-Oliveira-Barbosa/DataScience/tree/master/AceleraDev%20Data%20Science)
 - [**COVID-19**-> Estudo sobre a evolução do Coronavírus pelo mundo](https://github.com/Alberto-Oliveira-Barbosa/covid-19/blob/master/new-notebook-Covid-19.ipynb)
 - [**KDD 2009** -> Previsão de Churn, appetency e up-selling para a competição KDD Cup 2009](https://github.com/Alberto-Oliveira-Barbosa/DataScience/blob/master/KDD%202009/kdd.ipynb)
 - [**Previsão de Notas** -> Aplicação de redes neurais para a previsão das notas de matemática dos alunos que prestaram o Enem de 2016](https://github.com/Alberto-Oliveira-Barbosa/DataScience/blob/master/previsao%20notas/previsao_notas.ipynb)
